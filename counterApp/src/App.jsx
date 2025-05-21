@@ -3,6 +3,7 @@ import { useState } from 'react'
 function App() {
 
   let [counter, setCounter] = useState(0);
+  const [toggelText, setToggelText] = useState("Off");
 
   const inCount = ()=>{
     setCounter(counter+1);
@@ -22,6 +23,14 @@ function App() {
         {/* //this can be made a component */}
         <button onClick={inCount} className="h-12 bg-blue-500 text-amber-50 p-4 text-center m-4 rounded-md cursor-pointer hover:bg-blue-600">Increase Counter</button>
         <button onClick = {deCount} className="h-12 bg-blue-500 text-amber-50 p-4 text-center m-4 rounded-md cursor-pointer hover:bg-blue-600">Decreases Counter</button>
+        <button onClick = {()=>setCounter(0)} className="h-12 bg-blue-500 text-amber-50 p-4 text-center m-4 rounded-md cursor-pointer hover:bg-blue-600">Reset</button>
+      </div>
+      <hr />
+      {/* //now toggel section for conditional rendering */}
+      <div className='flex flex-col justify-center items-center gap-3 w-full'>
+        <span className='text-xl font-semibold font-serif'>Text to Displayed {toggelText}</span>
+        <button className='w-32 bg-blue-500 text-center p-3 rounded-xl hover:bg-blue-600'
+                onClick = {()=>setToggelText(toggelText === "Off" ? "On":"Off")}>Toggle</button>
       </div>
       
     </>
