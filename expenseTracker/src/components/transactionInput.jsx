@@ -6,7 +6,7 @@ function TransactionInput({handleAddTransaction,selectedRadio, onRadioChange, tN
       <h2 className="text-2xl font-semibold text-blue-100 tracking-wide">
         Add New Transaction
       </h2>
-      <form className="flex flex-col gap-4 m-auto justify-center w-1/2">
+      <form className="flex flex-col gap-4 m-auto">
         <input
           type="text"
           ref={tNameRef}

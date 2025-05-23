@@ -28,7 +28,7 @@ function App() {
         Mini Expense Tracker
       </header>
 
-      <span className="text-2xl block m-4 font-semibold text-blue-100 tracking-wide">
+      <span className="text-4xl font-serif text-center my-6 block mx-4 font-semibold text-blue-100 tracking-wide">
         Total Balance: {balance}
       </span>
 
