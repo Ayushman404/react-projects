@@ -3,3 +3,9 @@
 body{
   background-color: #222;
 }
+
+div{
+  scrollbar-color: rgb(91, 132, 228) transparent;
+  /* scrollbar-width: 4px; */
+  scrollbar-highlight-color: yellow;
+}

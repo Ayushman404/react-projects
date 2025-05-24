@@ -2,7 +2,7 @@ import React from "react";
 
 function TransactionInput({handleAddTransaction,selectedRadio, onRadioChange, tNameRef, tAmountRef}) {
   return (
-    <div className="flex flex-col gap-4 m-auto border-2 border-blue-200 justify-center items-center bg-transparent p-4 rounded-md w-[75%]">
+    <div className="flex flex-col gap-4 m-auto justify-center items-center bg-transparent p-4 rounded-md w-[75%]">
       <h2 className="text-2xl font-semibold text-blue-100 tracking-wide">
         Add New Transaction
       </h2>
